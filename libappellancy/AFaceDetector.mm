@@ -6,7 +6,7 @@
 #import "OpenCVData.h"
 #import <notify.h>
 #import "ACvVideoCamera.h"
-#define CAPTURE_FPS 10
+#define CAPTURE_FPS 15
 
 //static FaceDetector *faceDetector;
 static CustomFaceRecognizer *faceRecognizer;
