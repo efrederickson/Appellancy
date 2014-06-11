@@ -1,0 +1,3 @@
+[submodule "FaceRecognition/Vendor/ELCImagePickerController"]
+	path = FaceRecognition/Vendor/ELCImagePickerController
+	url = https://github.com/elc/ELCImagePickerController.git

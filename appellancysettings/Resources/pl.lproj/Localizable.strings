@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ENABLED</key>
+	<string>Włączone</string>
+	<key>DISABLEFORNOTIFICATIONS_FOOTER</key>
+	<string>Jeżeli ekran zostanie włączony przez powiadomienie, ta opcja wyłączy Appellancy do czasu następnego odblokowania.</string>
+	<key>DISABLEFORNOTIFICATIONS</key>
+	<string>Wyłącz dla powiadomień</string>
+	<key>DISABLEFORANYNOTIFICATIONS_FOOTER</key>
+	<string>Jeżeli masz oczekujące powiadomienia, Appellancy nie odblokuje Twojego urządzenia, dopóki powiadomienia nie zostaną odczytane.</string>
+	<key>DISABLEFORANYNOTIFICATIONS</key>
+	<string>Wyłącz gdy są powiadomienia</string>
+    <key>ONLYSTARTONSWIPE_FOOTER</key>
+	<string>Jeżeli włączone, Appellancy włączy się dopiero na widoku kodu blokady (zazwyczaj poprzez przesunięcie). Może pomóc z zawieszaniem (lub włączaniem Siri) gdy urządzenie jest budzone przyciskiem początek.</string>
+    <key>ONLYSTARTONSWIPE</key>
+	<string>Włącz tylko przy przesunięciu</string>
+    <key>DISABLEONMUSIC_FOOTER</key>
+	<string>Jeżeli włączone, Appellancy nie włączy się automatycznie gdy muzyka jest odtwarzana.</string>
+    <key>DISABLEONMUSIC</key>
+	<string>Nie włączaj przy muzyce</string>
+    <key>STARTONSWIPE_FOOTER</key>
+	<string>Appellancy zawsze będzie się włączać w widoku kodu blokady, jeżeli jeszcze się nie włączyło.</string>
+    <key>STARTONSWIPE</key>
+	<string>Zawsze włączaj z kodem</string>
+    <key>DENYENTRY_FOOTER</key>
+    <string>Ta opcja pokaże bądź ukryje sekcję Deny w aplikacji Appellancy. Jeżeli nie wiesz jak tego używać, pozostaw to wyłączone.</string>
+    <key>DENYENTRY</key>
+    <string>Pokaż sekcję Deny</string>
+    <key>GUESTMODE_FOOTER</key>
+    <string>Ta opcja wlączy modyfikację “GuestMode” jeżeli Appellancy odrzuci twarz</string>
+    <key>GUESTMODE</key>
+    <string>Uruchom GuestMode</string>
+    <key>PASSCODEALSO_FOOTER</key>
+    <string>Wymaga kodu blokady również przy rozpoznanej twarzy</string>
+    <key>PASSCODEALSO</key>
+    <string>Wymagaj Kodu Blokady</string>
+    <key>DONTCHANGE1_FOOTER</key>
+    <string>Nie zmienia tekstu 'wprowadź kod blokady' aby zmodyfikowany tekst (np. email, etc) był nadal pokazywany</string>
+    <key>DONTCHANGE1</key>
+    <string>Nie zmieniaj tekstu 'wprowadź kod blokady'</string>
+    <key>RESET_PASSCODE</key>
+    <string>Resetuj zapisany kod blokady i respring</string>
+    <key>SHOWIMAGE</key>
+    <string>Pokaż podgląd</string>
+    <key>SHOWIMAGE_FOOTER</key>
+    <string>Pokaż podgląd z kamery, pokazując co widzi Appellancy. Wymagany respring do zastosowania zmian</string>
+    <key>DONTCHANGE2_FOOTER</key>
+    <string>Nie zmienia tekstu 'odblokuj' aby zmodyfikowany tekst (np. email, etc) był nadal pokazywany</string>
+    <key>DONTCHANGE2</key>
+    <string>Nie zmieniaj tekstu 'odblokuj'</string>
+</dict>
+</plist>

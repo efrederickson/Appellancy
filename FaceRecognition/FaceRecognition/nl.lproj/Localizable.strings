@@ -1,0 +1,16 @@
+"ADD_PEOPLE" = "Voeg eerst personen toe aan de database";
+"CANNOT_DELETE_DENY" = "Je kunt het 'Deny' gedeelte niet verwijderen. Dit is voor je eigen veiligheid. Als je de aanmeldingen voor het 'Deny' gedeelte wilt verwijderen, reset dan de database.";
+"CANNOT_SWITCH_CAMERA_WARNING" = "Kan niet van camera wisselen wanneer je geen foto's maakt!";
+"CONFIDENCE" = "Zekerheid";
+"DENY_ENTRY" = "Dit is het weigergedeelte. Alles wat hier gescanned wordt, zal worden geweigerd.";
+"DENY_ENTRY_INSTRUCTIONS" = "Scan de mensen waarvan Appellancy moet leren ze te weigeren.";
+"INSTRUCTIONS_LABEL" = "Zorg dat %@ de telefoon vasthoud. Zodra je er klaar voor bent, druk je op start.";
+"INSTRUCTIONS_POPUP" = "Wanneer de camera aan staat, draai deze dan rond om andere hoeken van je gezicht te herkennen. Voor optimale veiligheid is het ook aanbevolen om minimaal 20 foto's te maken, waaronder in ieder geval 4 verschillende soorten licht. Hoe meer foto's je maakt, des te langzamer Appellancy wordt.";
+"MISSING_DB_FILE" = "De originele database bestaat niet. Herinstalleer Appellancy, of, als het probleem blijft bestaan, contacteer de ontwikkelaar.";
+"NO_FACE_IN_IMAGE" = "Geen gezicht in afbeelding";
+"NO_MATCH_FOUND" = "Geen match gevonden";
+"PERSON_NAME" = "Persoon's naam";
+"RECOGNIZED" = "Herkend";
+"RESET_DB_PROMPT" = "Weet je zeker dat je de database wilt resetten? De Appellancy app zal sluiten.";
+"SAVED_IMAGES" = "Opgeslagen foto's";
+"TRAINING_RECOGNIZER" = "Trainen van de gezichtsherkenner\nPlease wait...";

@@ -1,0 +1,30 @@
+
+/* Class = "IBUIButton"; normalTitle = "Switch"; ObjectID = "0qs-wS-6nx"; */
+"0qs-wS-6nx.normalTitle" = "Switch";
+
+/* Class = "IBUINavigationItem"; title = "Capture Images"; ObjectID = "JOo-Eo-Ksy"; */
+"JOo-Eo-Ksy.title" = "Capture Images";
+
+/* Class = "IBUIButton"; normalTitle = "Switch"; ObjectID = "VfR-dz-AiB"; */
+"VfR-dz-AiB.normalTitle" = "Switch";
+
+/* Class = "IBUILabel"; text = "Starting camera..."; ObjectID = "fhn-Ma-tr1"; */
+"fhn-Ma-tr1.text" = "Starting camera...";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "jUJ-Ip-jmU"; */
+"jUJ-Ip-jmU.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Title"; ObjectID = "qlN-Mf-h6V"; */
+"qlN-Mf-h6V.text" = "Title";
+
+/* Class = "IBUITabBarItem"; title = "Recognize"; ObjectID = "rCM-2L-lgK"; */
+"rCM-2L-lgK.title" = "Recognize";
+
+/* Class = "IBUINavigationItem"; title = "People"; ObjectID = "rsg-9D-MZA"; */
+"rsg-9D-MZA.title" = "People";
+
+/* Class = "IBUITabBarItem"; title = "People"; ObjectID = "sI8-T4-3oY"; */
+"sI8-T4-3oY.title" = "People";
+
+/* Class = "IBUIButton"; normalTitle = "Start"; ObjectID = "z3q-SW-ikM"; */
+"z3q-SW-ikM.normalTitle" = "Start";

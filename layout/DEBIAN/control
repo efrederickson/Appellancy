@@ -1,0 +1,12 @@
+Package: org.thebigboss.appellancy
+Name: Appellancy
+Depends: mobilesubstrate, com.a3tweaks.flipswitch, preferenceloader, cy+os.ios (>= 6.0)
+Replaces: com.myrepospace.mlnlover11.appellancy, com.efrederickson.appellancy
+Version: 1.0.0
+Architecture: iphoneos-arm
+Description: Control your phone with your face!
+Maintainer: Elijah Frederickson <elijah.frederickson@gmail.com>
+Author: Elijah Frederickson <elijah.frederickson@gmail.com>
+Section: Tweaks
+#Support: http://cydia.abovezero.org
+#Depiction: http://cydia.abovezero.org/appellancy/changelog.html

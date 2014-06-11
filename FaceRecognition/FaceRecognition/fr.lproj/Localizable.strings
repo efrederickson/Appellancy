@@ -1,0 +1,16 @@
+"ADD_PEOPLE" = "Ajoutez d'abords des visages à la base de données";
+"CANNOT_DELETE_DENY" = "Vous *ne pouvez pas* supprimer la catégorie \"Refusé\" mais par contre vous pouvez réinitialiser la base de données.";
+"CANNOT_SWITCH_CAMERA_WARNING" = "Vous ne pouvez pas utiliser l'appareil photo pendant que vous utilisez Appellancy !";
+"CONFIDENCE" = "Intervalle de confiance";
+"DENY_ENTRY" = "Les visages insérés ici seront automatiquement refusés.";
+"DENY_ENTRY_INSTRUCTIONS" = "Importez ici la photo d'une personne à exclure. Appellancy tentera alors de reconnaître le visage.";
+"INSTRUCTIONS_LABEL" = "Assurez-vous que %@ fait face à la caméra. Lorsque vous êtes prêt, appuyez sur \"Démarrer\".";
+"INSTRUCTIONS_POPUP" = "Lorsque l'appareil photo sera activé, déplacez-le autour de votre visage pour enregistrer plusieurs angles. Il est recommandé de prendre environ 20 photos, dont 4 avec une luminosité différente. Attention, un nombre trop élevé de photos pourrait ralentir la reconnaissance.";
+"MISSING_DB_FILE" = "Le base de données n'existe pas, merci de réinstaller Appellancy. Si le problème persiste, veuillez contacter le développeur.";
+"NO_FACE_IN_IMAGE" = "Aucun visage reconnu.";
+"NO_MATCH_FOUND" = "Aucune correspondance trouvée";
+"PERSON_NAME" = "Nom ";
+"RECOGNIZED" = "Reconnu";
+"RESET_DB_PROMPT" = "Etes-vous sûr de vouloir réinitialiser la base de données? Ceci fermera l'application.";
+"SAVED_IMAGES" = "photos sauvées";
+"TRAINING_RECOGNIZER" = "Reconnaissance en cours...";

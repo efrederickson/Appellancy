@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  Appellancy
+
+  Created by Elijah Frederickson on 3/24/14.
+
+*/
+"ADD_PEOPLE" = "Add people in the database first";
+"NO_MATCH_FOUND" = "No match found";
+"NO_FACE_IN_IMAGE" = "No face in image";
+"RECOGNIZED" = "Recognized";
+"CONFIDENCE" = "Confidence";
+"RESET_DB_PROMPT" = "Are you sure you want to reset the database? This will kill the Appellancy app.";
+"TRAINING_RECOGNIZER" = "Training face recognizer\nPlease wait...";
+"PERSON_NAME" = "Person's name";
+"MISSING_DB_FILE" = "The original database does not exist. Please reinstall Appellancy, or, if the problem persists, contact the developer.";
+"CANNOT_DELETE_DENY" = "You *cannot* delete the Deny entry. This is for your own safety. If you want to reset entries in it, please reset the database.";
+"SAVED_IMAGES" = "saved images";
+"DENY_ENTRY" = "This is the Deny entry. Anything scanned here will be learned to deny.";
+"DENY_ENTRY_INSTRUCTIONS" = "Scan the people you want Appellancy to learn from and deny.";
+"INSTRUCTIONS_POPUP" = "When the camera starts, move it around to show different angles of your face. For best security is recommended to have around 20 pictures, with about 4 each taken in various lightings. The more pictures you have, the slower Appellancy will be to start.";
+"CANNOT_SWITCH_CAMERA_WARNING" = "Cannot switch cameras when you aren't taking pictures!";
+"INSTRUCTIONS_LABEL" = "Make sure %@ is holding the phone. When you are ready, press start.";

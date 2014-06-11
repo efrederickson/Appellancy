@@ -1,0 +1,10 @@
+*.deb
+_/
+obj/
+.theos/
+.DS_Store
+[Tt]odo
+build/
+theos/
+appellancy_api_sample/
+debs/

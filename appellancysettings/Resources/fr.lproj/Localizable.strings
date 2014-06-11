@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DENYENTRY</key>
+	<string>Montre les visages rejetès</string>
+	<key>DENYENTRY_FOOTER</key>
+	<string>Cette option active la section "Rejeté" dans Appellancy.app. Si vous ne savez pas ce que c'est et comment l'utiliser, éteignez-le.</string>
+	<key>DISABLEFORANYNOTIFICATIONS</key>
+	<string>Arrêt avec Notifications</string>
+	<key>DISABLEFORANYNOTIFICATIONS_FOOTER</key>
+	<string>Si vous avez des notifications non lues, Appellancy ne déverrouillera pas votre appareil jusqu'à ce que les notifications ne seront pas lus.</string>
+	<key>DISABLEFORNOTIFICATIONS</key>
+	<string>Dèsactive avec Notifications entrants</string>
+	<key>DISABLEFORNOTIFICATIONS_FOOTER</key>
+	<string>Si une notification apparaît sur ​​l'écran, Appellancy ne fonctionnera pas jusqu'à que l'écran ne sera pas rallumé.</string>
+	<key>DISABLEONMUSIC</key>
+	<string>Dèsactive avec Musique</string>
+	<key>DISABLEONMUSIC_FOOTER</key>
+	<string>Appellancy ne fonctionnerà pas si la musique est en reproduction.</string>
+	<key>ENABLED</key>
+	<string>Actif</string>
+	<key>GUESTMODE</key>
+	<string>Active GuestMode</string>
+	<key>GUESTMODE_FOOTER</key>
+	<string>Cette option va activer le tweak "GuestMode" si un visage est rejetée.</string>
+	<key>ONLYSTARTONSWIPE</key>
+	<string>Active seul. sur "Code"</string>
+	<key>ONLYSTARTONSWIPE_FOOTER</key>
+	<string>Si activé, Appellancy ne fonctionnera que quand l'écran de saisie du code est activé.</string>
+	<key>STARTONSWIPE</key>
+	<string>Active toujours sur "Code"</string>
+	<key>STARTONSWIPE_FOOTER</key>
+	<string>Appellancy fonctionnera toujours sur l'écran de saisie du code, même si elle n'est pas active.</string>
+</dict>
+</plist>

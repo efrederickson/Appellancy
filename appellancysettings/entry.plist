@@ -1,0 +1,10 @@
+{
+	entry = {
+		bundle = AppellancySettings;
+		cell = PSLinkCell;
+		detail = "AppellancySettingsListController";
+		icon = "AppellancySettings.png";
+		isController = 1;
+		label = Appellancy;
+	};
+}

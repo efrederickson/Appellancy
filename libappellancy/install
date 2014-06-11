@@ -1,0 +1,2 @@
+#!/bin/sh
+cp .theos/obj/libAppellancy.dylib $THEOS/lib/

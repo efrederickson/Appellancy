@@ -1,0 +1,16 @@
+"ADD_PEOPLE" = "Ilk önce kişi ekleyin";
+"CANNOT_DELETE_DENY" = "Engellenen kişileri *SİLEMEZSİNİZ*. Bu sizin kendi güvenliğiniz için. Eğer engellenmiş kişileri silmek istiyorsanız, lütfen veritabanını sıfırlayın.";
+"CANNOT_SWITCH_CAMERA_WARNING" = "Fotoğraf çekmiyorken kamera değiştirilemez!";
+"CONFIDENCE" = "Güvenilirlik";
+"DENY_ENTRY" = "Bu engellenmiş kişilerin listesi. Buradaki kişiler tanındığında engellenecekler.";
+"DENY_ENTRY_INSTRUCTIONS" = "Appellancy'nin gördüğünde engellemesini istediğiniz kişileri buraya kaydedin.";
+"INSTRUCTIONS_LABEL" = "Telefonu %@'nın tuttuğuna emin olun. Hazır olduğunuzda Başla'ya basın.";
+"INSTRUCTIONS_POPUP" = "Kamera açılınca yüzünüzü farklı yönlerden çekin. En yüksek güvenlik için, yüzünüzün yaklaşık 20 fotoğrafını 4 farklı ışık altında çekin. Ancak be kadar çok fotoğrafınız olursa, Appellancy o kadar yavaşlayacaktır.";
+"MISSING_DB_FILE" = "Orijinal veritabanı yok,lütfen Appellancy'i yeniden yükleyin, ya da eğer problem devam ederse, geliştiriciye başvurun.";
+"NO_FACE_IN_IMAGE" = "Yüz bulunamadı";
+"NO_MATCH_FOUND" = "Eşkeşme bulunamadı";
+"PERSON_NAME" = "Kişinin ismi";
+"RECOGNIZED" = "Tanındı";
+"RESET_DB_PROMPT" = "Veritabanını sıfırlamak istediğinizden emin misiniz? Bu Appellancy uygulamasını kapatacak.";
+"SAVED_IMAGES" = "Kayıtlı resimler";
+"TRAINING_RECOGNIZER" = "Yüz tanıma denemesi\nLütfen Bekleyin...";

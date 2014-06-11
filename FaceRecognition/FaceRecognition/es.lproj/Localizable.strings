@@ -1,0 +1,16 @@
+"ADD_PEOPLE" = "Primero agrega personas en la base de datos.";
+"CANNOT_DELETE_DENY" = "Tú *no puedes* borrar la entrada \"Rechazados\". Esto es por tu propia seguridad. Si quieres restablecer las entradas en ella, por favor restablece la base de datos.";
+"CANNOT_SWITCH_CAMERA_WARNING" = "No se puede cambiar de cámara cuando no estás tomando fotos!";
+"CONFIDENCE" = "Confianza";
+"DENY_ENTRY" = "Esta es la entrada \"Rechazados\". Cualquier cosa escaneada aquí será aprendida como \"Rechazada\".";
+"DENY_ENTRY_INSTRUCTIONS" = "Escanea las personas que quieres que Appellancy aprenda y rechace.";
+"INSTRUCTIONS_LABEL" = "Asegúrate que %@ está sosteniendo el teléfono. Cuando estés listo, presiona iniciar.";
+"INSTRUCTIONS_POPUP" = "Cuando la cámara inicie, muévela un poco para mostrar distintos ángulos de tu cara. Para mejor seguridad se recomienda tener cerca de 20 fotos, con más o menos cada 4 tomadas en distintas iluminaciones. Entre más fotos tengas, más lento será Appellancy para iniciar.";
+"MISSING_DB_FILE" = "La base de datos original no existe. Por favor reinstala Appellancy, o, si el problema persiste, contacta al desarrollador.";
+"NO_FACE_IN_IMAGE" = "No hay cara en la imagen";
+"NO_MATCH_FOUND" = "No se encuentra coincidencia";
+"PERSON_NAME" = "Nombre de la persona";
+"RECOGNIZED" = "Reconocido";
+"RESET_DB_PROMPT" = "¿Estas seguro que quieres reiniciar la base de datos? Esto cerrará Appellancy.";
+"SAVED_IMAGES" = "imágenes guardadas";
+"TRAINING_RECOGNIZER" = "Entrenando reconocedor de rostros\nPorfavor espera...";

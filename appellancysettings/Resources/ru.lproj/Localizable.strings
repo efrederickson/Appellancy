@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DENYENTRY</key>
+	<string>Показать Отказ доступа</string>
+	<key>DENYENTRY_FOOTER</key>
+	<string>Эта функция скроет или покажет Запртет доступа (Deny) в приложении Appellancy. Если вы не знаете, что это, то оставьте ее выключенной.</string>
+	<key>DISABLEFORANYNOTIFICATIONS</key>
+	<string>Откл. при уведомлениях</string>
+	<key>DISABLEFORANYNOTIFICATIONS_FOOTER</key>
+	<string>Если у вас есть уведомления на экране блокировки, Appellancy не будет разблокировать ваше устройство, пока уведомления не будут прочитаны.</string>
+	<key>DISABLEFORNOTIFICATIONS</key>
+	<string>Откл. при новых уведомл.</string>
+	<key>DISABLEFORNOTIFICATIONS_FOOTER</key>
+	<string>Если экран включится при получении уведомления, то Appellancy будет отключена, пока вы не включите экран заново.</string>
+	<key>DISABLEONMUSIC</key>
+	<string>Выкл. при музыке</string>
+	<key>DISABLEONMUSIC_FOOTER</key>
+	<string>Если включить, то Appellancy не будет автоматически включатся, когда играет музыка.</string>
+	<key>DONTCHANGE1</key>
+	<string>Dont change 'Enter Passcode' text</string>
+	<key>DONTCHANGE1_FOOTER</key>
+	<string>Doesnt change the 'enter passcode' label so customized text (email, etc) will be retained</string>
+	<key>DONTCHANGE2</key>
+	<string>Dont change 'Slide to unlock' text</string>
+	<key>DONTCHANGE2_FOOTER</key>
+	<string>Doesnt change the 'slide to unlock' label so customized text (email, etc) will be retained</string>
+	<key>ENABLED</key>
+	<string>Enabled</string>
+	<key>GUESTMODE</key>
+	<string>Start GuestMode on rejection</string>
+	<key>GUESTMODE_FOOTER</key>
+	<string>This option will activate the tweak “GuestMode” if Appellancy rejects a face</string>
+	<key>ONLYSTARTONSWIPE</key>
+	<string>Only start on swipe</string>
+	<key>ONLYSTARTONSWIPE_FOOTER</key>
+	<string>When enabled, Appellancy will only start when the passcode view becomes active (usually by swiping). May help with lag (or Siri getting invoked) when the screen is turned on by the home button.</string>
+	<key>PASSCODEALSO</key>
+	<string>Require passcode also</string>
+	<key>PASSCODEALSO_FOOTER</key>
+	<string>Require device password also after accepting a face</string>
+	<key>RESET_PASSCODE</key>
+	<string>Reset saved passcode and respring</string>
+	<key>SHOWIMAGE</key>
+	<string>Show LockScreen ImageView</string>
+	<key>SHOWIMAGE_FOOTER</key>
+	<string>Shows an ImageView of the camera on the lockscreen, reflecting what Appellancy sees. Requires a respring to apply changes</string>
+	<key>STARTONSWIPE</key>
+	<string>Always start on swipe</string>
+	<key>STARTONSWIPE_FOOTER</key>
+	<string>Appellancy will always start on the passcode view if it isn’t yet started.</string>
+</dict>
+</plist>
