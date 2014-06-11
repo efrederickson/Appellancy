@@ -15,6 +15,7 @@ On older/weaker devices (such as the iPod 5 and iPhone 4) it is recommended to h
 License: WTFPL
 
 Installation instructions:
+1. Change the app’s build script to point to wherever you downloaded the appellancy source code.
 2. run “make package install THEOS_DEVICE_IP=192.168.X.XXX” to build and install on your device
 3. ???
 4. Profit
