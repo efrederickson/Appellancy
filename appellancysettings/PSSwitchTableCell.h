@@ -1,3 +1,9 @@
+/*
+ This header is not included in rpetrich's iphoneheaders.
+ Why not? Who knows, probably because his headers are old.
+ Anyway, here is the iOS 7 class PSSwitchTableCell, inherited by AppellancyTintedSwitchCell
+ */
+
 @class UIActivityIndicatorView;
 
 @interface PSSwitchTableCell : PSControlTableCell  {
