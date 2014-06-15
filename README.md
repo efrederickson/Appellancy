@@ -1,4 +1,9 @@
-<h2>Appellancy</h2> is a next-generation face recognition tweak for your iDevice that supports all iPhones, iPods, and iPads running iOS 7. It is nearly flawless in its recognition, and it integrates into the native look and feel of iOS 7 so well that you’ll wonder why it isn't a native feature. It currently supports all iPods, iPhones, and iPads running iOS 7.
+Appellancy
+=====================
+
+----------
+
+Appellancy is a next-generation face recognition tweak for your iDevice that supports all iPhones, iPods, and iPads running iOS 7. It is nearly flawless in its recognition, and it integrates into the native look and feel of iOS 7 so well that you’ll wonder why it isn't a native feature. It currently supports all iPods, iPhones, and iPads running iOS 7.
 
 There is a simple API for other developers to integrate Appellancy into their projects, more details available at https://github.com/mlnlover11/Appellancy-API, so Appellancy is not limited to the lockscreen, it is possible to integrate into many app locking tweaks.
 
@@ -20,6 +25,10 @@ Installation instructions:
 3. ???
 4. Profit
 
+Screenshots: 
+![Settings app][1]
+![Face scanner][2]
+
 TODO
 - save/load FaceRecognizer from xml/yml
 - require password as well
@@ -30,4 +39,9 @@ TODO
 - view/remove stored images
 - Manually add images
 - Choose to allow/deny certain profiles
+
+----------
+
+  [1]: https://github.com/mlnlover11/Appellancy/raw/master/Screenshot4.png
+  [2]: https://github.com/mlnlover11/Appellancy/raw/master/Screenshot1.png
 
