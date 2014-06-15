@@ -116,7 +116,7 @@
 			<key>cellClass</key>
 			<string>AppellancyTintedCell</string>
 			<key>icon</key>
-			<string>opencv.png</string>
+			<string>opencv_license.png</string>
 		</dict>
 		<dict>
 			<key>cell</key>
