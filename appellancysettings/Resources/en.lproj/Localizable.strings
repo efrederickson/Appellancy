@@ -53,7 +53,7 @@
     <key>OPTIONS</key>
     <string>Settings</string>
     <key>MAKERS</key>
-    <string>Contributers</string>
+    <string>Contributors</string>
     <key>ENABLED_DESCRIPTION</key>
     <string>Quickly enable/disable Appellancy</string>
 </dict>
