@@ -1,3 +1,5 @@
+#import <Social/SLComposeViewController.h>
+#import <Social/SLServiceTypes.h>
 #import "AppellancySettingsListController.h"
 #import "common.h"
 
@@ -41,10 +43,38 @@
 {
     [super loadView];
     
+    UIImage* image = [UIImage imageNamed:@"heart.png" inBundle:[NSBundle bundleForClass:self.class]];
+    CGRect frameimg = CGRectMake(0, 0, image.size.width, image.size.height);
+    UIButton *someButton = [[UIButton alloc] initWithFrame:frameimg];
+    [someButton setBackgroundImage:image forState:UIControlStateNormal];
+    [someButton addTarget:self action:@selector(heartWasTouched)
+         forControlEvents:UIControlEventTouchUpInside];
+    [someButton setShowsTouchWhenHighlighted:YES];
+    UIBarButtonItem *heartButton = [[UIBarButtonItem alloc] initWithCustomView:someButton];
+    
+    UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc]
+                                       initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace
+                                       target:nil action:nil];
+    negativeSpacer.width = -16;
+    [self.navigationItem setRightBarButtonItems:[NSArray arrayWithObjects:negativeSpacer, heartButton, nil] animated:NO];
+    
+    //((UINavigationItem*)self.navigationItem).rightBarButtonItem = heartButton;
+    
     [self setupHeader];
     
     [UISwitch appearanceWhenContainedIn:self.class, nil].onTintColor = NEON_GREEN_COLOR;
     //[UISwitch appearanceWhenContainedIn:self.class, nil].tintColor = NEON_GREEN_COLOR;
+}
+
+-(void) heartWasTouched
+{
+    SLComposeViewController *composeController = [SLComposeViewController
+                                                  composeViewControllerForServiceType:SLServiceTypeTwitter];
+    
+    [composeController setInitialText:@"I’m loving #Appellancy from @Daementor!"];
+    
+    [self presentViewController:composeController
+                       animated:YES completion:nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

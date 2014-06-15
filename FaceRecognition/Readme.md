@@ -1,7 +1,7 @@
 # Face Detection & Recognition on iOS
 This is an example iPhone application that performs face detection and recognition using the excellent [OpenCV framework](http://opencv.org).
 
-This was adapted for use by Appellancy
+This was adapted for use by Appellancy and updated to iOS 7
 
 Obviously, the app needs the camera to function, and will not work on the simulator.
 

@@ -56,7 +56,7 @@
 			<key>cellClass</key>
 			<string>AppellancyTintedCell</string>
 			<key>icon</key>
-			<string>email.png</string>
+			<string>feature_request.png</string>
 		</dict>
 		<dict>
 			<key>cell</key>
@@ -146,7 +146,6 @@
 			<key>icon</key>
 			<string>opencv_license.png</string>
 		</dict>
-
 		<dict>
 			<key>cell</key>
 			<string>PSGroupCell</string>

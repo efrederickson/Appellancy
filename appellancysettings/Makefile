@@ -7,7 +7,7 @@ TARGET = iphone:clang:7.1:7.1
 BUNDLE_NAME = AppellancySettings
 AppellancySettings_FILES = MakersListController.m ActualSettingsListController.m AppellancyTintedCell.m AppellancyTintedSwitchCell.m AppellancySettingsListController.m
 AppellancySettings_INSTALL_PATH = /Library/PreferenceBundles
-AppellancySettings_FRAMEWORKS = UIKit
+AppellancySettings_FRAMEWORKS = UIKit Social
 AppellancySettings_PRIVATE_FRAMEWORKS = Preferences
 
 include $(THEOS_MAKE_PATH)/bundle.mk

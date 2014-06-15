@@ -4,7 +4,8 @@
 #define NEON_GREEN_COLOR         [UIColor colorWithRed:0/255.0f green:252/255.0f blue:21/255.0f alpha:1.0f]
 #define NEON_GREEN_COLOR_ANDREW  [UIColor colorWithRed:128/255.0f green:185/255.0f blue:91/255.0f alpha:1.0f] // @drewplex prefers this color for the UISwitch onTintColor
 #define NAVBAR_GREEN_COLOR       [UIColor colorWithRed:41/255.0f green:177/255.0f blue:52/255.0f alpha:1.0f]
-#define DARKER_GREEN_COLOR       [UIColor colorWithRed:0/255.0f green:224/255.0f blue:42/255.0f alpha:1.0f]
+#define DARKER_GREEN_COLOR       NAVBAR_GREEN_COLOR
+    /*[UIColor colorWithRed:0/255.0f green:224/255.0f blue:42/255.0f alpha:1.0f]*/
 
 @interface PSListController (Appellancy)
 -(UIView*)view;
