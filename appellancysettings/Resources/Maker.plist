@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Developer information</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>openTwitter</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>@daementor on Twitter</string>
+			<key>cellClass</key>
+			<string>AppellancyTintedCell</string>
+			<key>icon</key>
+			<string>twitter.png</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>openGithub</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>@mlnlover11 on GitHub</string>
+			<key>cellClass</key>
+			<string>AppellancyTintedCell</string>
+			<key>icon</key>
+			<string>github.png</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>sendEmail</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Contact developer via email</string>
+			<key>cellClass</key>
+			<string>AppellancyTintedCell</string>
+			<key>icon</key>
+			<string>email.png</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>sendEmail_FR</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Feature request</string>
+			<key>cellClass</key>
+			<string>AppellancyTintedCell</string>
+			<key>icon</key>
+			<string>email.png</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Artist information</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>openArtistTwitter</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>@drewplex on Twitter</string>
+			<key>cellClass</key>
+			<string>AppellancyTintedCell</string>
+			<key>icon</key>
+			<string>twitter.png</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>openArtistSite</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Website</string>
+			<key>cellClass</key>
+			<string>AppellancyTintedCell</string>
+			<key>icon</key>
+			<string>aboshsite.png</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>OpenCV Information</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>openOpenCVWebsite</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>OpenCV Website</string>
+			<key>cellClass</key>
+			<string>AppellancyTintedCell</string>
+			<key>icon</key>
+			<string>opencv.png</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>openOpenCVLicense</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>OpenCV License</string>
+			<key>cellClass</key>
+			<string>AppellancyTintedCell</string>
+			<key>icon</key>
+			<string>opencv.png</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>openSourceCode</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Appellancy Source Code</string>
+			<key>icon</key>
+			<string>github.png</string>
+			<key>cellClass</key>
+			<string>AppellancyTintedCell</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Copyright (C) 2014 Elijah Frederickson. Graphics provided by Andrew Abosh. Translations by @Azzo994, @ldehaas1612, @iMatt2CP, @rgalezo, and Muhammed Gül.</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>Contributers</string>
+</dict>
+</plist>

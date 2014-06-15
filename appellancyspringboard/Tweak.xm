@@ -5,6 +5,7 @@
 #import <notify.h>
 #import <libPass/libPass.h>
 #import "headers.h"
+#import <LibGuest/LibGuest.h>
 
 #define DISPATCH_QUEUE        DISPATCH_QUEUE_PRIORITY_DEFAULT
 #define SETTINGS_FILE         @"/var/mobile/Library/Preferences/com.efrederickson.appellancysettings.plist"
@@ -177,8 +178,17 @@ static void reloadRecognizer(CFNotificationCenterRef center,
         notify_post([AFaceRejected UTF8String]);
 
         if (startGuestModeOnFail)
-            CFNotificationCenterPostNotification(CFNotificationCenterGetDarwinNotifyCenter(), CFSTR("com.ianb821.guestmode/launchGuestMode"), nil, nil, YES);
-        
+        {
+            Class libGuest = %c(LibGuest);
+            if (libGuest)
+            {
+                if (![[libGuest sharedInstance] isActive]) // wait we are on the lockscreen, right? huh oh well
+                    [[libGuest sharedInstance] activate];
+            }
+            else
+                CFNotificationCenterPostNotification(CFNotificationCenterGetDarwinNotifyCenter(), CFSTR("com.ianb821.guestmode/launchGuestMode"), nil, nil, YES);
+        }
+
         if (storedPasscodeView && !dontChange1)
             [storedPasscodeView _updateStatusText:@"Face not recognized" animated:YES];
         if (!dontChange2)

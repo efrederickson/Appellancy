@@ -5,13 +5,12 @@ THEOS_DEVICE_IP=192.168.7.146
 THEOS_PACKAGE_DIR_NAME = debs
 
 include $(THEOS)/makefiles/common.mk
-#include $(THEOS_MAKE_PATH)/tweak.mk
 
-all::
-	cd FaceRecognition && xcodebuild -parallelizeTargets > /dev/null
+#all::
+#	cd FaceRecognition && xcodebuild -parallelizeTargets > /dev/null
 
 after-install::
-	install.exec "killall -9 SpringBoard"
+	install.exec "killall -9 Preferences"
 
 #main project
 SUBPROJECTS += libappellancy

@@ -1,10 +1,11 @@
 include $(THEOS)/makefiles/common.mk
 
-ARCHS=armv7 armv7s arm64
+ARCHS = armv7 armv7s arm64
 CFLAGS = -fobjc-arc
+TARGET = iphone:clang:7.1:7.1
 
 BUNDLE_NAME = AppellancySettings
-AppellancySettings_FILES = AppellancySettings.mm
+AppellancySettings_FILES = MakersListController.m ActualSettingsListController.m AppellancyTintedCell.m AppellancyTintedSwitchCell.m AppellancySettingsListController.m
 AppellancySettings_INSTALL_PATH = /Library/PreferenceBundles
 AppellancySettings_FRAMEWORKS = UIKit
 AppellancySettings_PRIVATE_FRAMEWORKS = Preferences

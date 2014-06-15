@@ -29,7 +29,7 @@
     <key>DENYENTRY</key>
     <string>Show Deny entry</string>
     <key>GUESTMODE_FOOTER</key>
-    <string>This option will activate the tweak “GuestMode” if Appellancy rejects a face</string>
+    <string>This option will activate the tweak “GuestMode” or “GuestFramework” if Appellancy rejects a face</string>
     <key>GUESTMODE</key>
     <string>Start GuestMode on rejection</string>
     <key>PASSCODEALSO_FOOTER</key>
@@ -37,7 +37,7 @@
     <key>PASSCODEALSO</key>
     <string>Require passcode also</string>
     <key>DONTCHANGE1_FOOTER</key>
-    <string>Doesnt change the 'enter passcode' label so customized text (email, etc) will be retained</string>
+    <string>Doesn't change the 'enter passcode' label so customized text (email, etc) will be retained.</string>
     <key>DONTCHANGE1</key>
     <string>Dont change 'Enter Passcode' text</string>
     <key>RESET_PASSCODE</key>
@@ -47,8 +47,14 @@
     <key>SHOWIMAGE_FOOTER</key>
     <string>Shows an ImageView of the camera on the lockscreen, reflecting what Appellancy sees. Requires a respring to apply changes</string>
     <key>DONTCHANGE2_FOOTER</key>
-    <string>Doesnt change the 'slide to unlock' label so customized text (email, etc) will be retained</string>
+    <string>Doesn't change the 'slide to unlock' label so customized text (email, etc) will be retained.</string>
     <key>DONTCHANGE2</key>
     <string>Dont change 'Slide to unlock' text</string>
+    <key>OPTIONS</key>
+    <string>Settings</string>
+    <key>MAKERS</key>
+    <string>Contributers Information</string>
+    <key>ENABLED_DESCRIPTION</key>
+    <string>Quickly enable/disable Appellancy</string>
 </dict>
 </plist>
