@@ -12,7 +12,7 @@ It is currently compatible with most known lockscreen tweaks, including, but not
 
 On older/weaker devices (such as the iPod 5 and iPhone 4) it is recommended to have no more than 20 scanned photos or it may result in instability. 
 
-License: WTFPL
+License: BSD
 
 Installation instructions:
 1. Change the app’s build script to point to wherever you downloaded the appellancy source code.

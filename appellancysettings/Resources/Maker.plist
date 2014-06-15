@@ -135,6 +135,19 @@
 			<string>AppellancyTintedCell</string>
 		</dict>
 		<dict>
+			<key>action</key>
+			<string>openAppellancyLicense</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Appellancy Source License</string>
+			<key>cellClass</key>
+			<string>AppellancyTintedCell</string>
+			<key>icon</key>
+			<string>opencv_license.png</string>
+		</dict>
+
+		<dict>
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>footerText</key>

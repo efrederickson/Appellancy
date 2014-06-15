@@ -113,6 +113,11 @@
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://github.com/Itseez/opencv/blob/master/LICENSE"]];
 }
 
+-(void) openAppellancyLicense
+{
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://github.com/mlnlover11/Appellancy/blob/master/LICENSE"]];
+}
+
 -(void) openSourceCode
 {
     if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"ioc:"]])
