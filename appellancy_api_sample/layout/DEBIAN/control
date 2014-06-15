@@ -1,0 +1,10 @@
+Package: com.efrederickson.appellancy-api-test
+Name: Appellancy API Test
+Depends: com.efrederickson.appellancy
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: Show off dat api!!1!
+Maintainer: Elijah Frederickson <elijah.frederickson@gmail.com>
+Author: Elijah Frederickson <elijah.frederickson@gmail.com>
+Section: Tweaks
+Support: http://cydia.abovezero.org
