@@ -162,7 +162,8 @@ static void reloadRecognizer(CFNotificationCenterRef center,
                 SBAwayController *awayController = [%c(SBAwayController) sharedAwayController];
                 if ([awayController respondsToSelector:@selector(attemptDeviceUnlockWithPassword:lockViewOwner:)])
                 {
-                    [awayController attemptDeviceUnlockWithPassword:[[LibPass sharedInstance] getEffectiveDevicePasscode] lockViewOwner:nil];
+                    if ([[LibPass sharedInstance] respondsToSelector:@selector(getEffectiveDevicePasscode)])
+                        [awayController attemptDeviceUnlockWithPassword:[[LibPass sharedInstance] getEffectiveDevicePasscode] lockViewOwner:nil];
                     return;
                 }
             }

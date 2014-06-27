@@ -7,8 +7,6 @@
 		<dict>
 			<key>cell</key>
 			<string>PSGroupCell</string>
-			<key>footerText</key>
-			<string>ENABLED_DESCRIPTION</string>
 		</dict>
 		<dict>
 			<key>cell</key>
