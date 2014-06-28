@@ -10,7 +10,7 @@ include $(THEOS)/makefiles/common.mk
 #	cd FaceRecognition && xcodebuild -parallelizeTargets > /dev/null
 
 after-install::
-	install.exec "killall -9 Preferences"
+	install.exec "killall -9 SpringBoard"
 
 #main project
 SUBPROJECTS += libappellancy

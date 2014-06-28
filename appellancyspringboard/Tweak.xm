@@ -131,45 +131,18 @@ static void reloadRecognizer(CFNotificationCenterRef center,
     });
 
     // ATTEMPT UI UNLOCK
-        dispatch_sync(dispatch_get_main_queue(), ^{
+    dispatch_sync(dispatch_get_main_queue(), ^{
 
-            if (!enabled)
-                return;
+        if (!enabled)
+            return;
             
-            //LASendEventWithName(AFaceAccepted);
-            notify_post([AFaceAccepted UTF8String]);
+        //LASendEventWithName(AFaceAccepted);
+        notify_post([AFaceAccepted UTF8String]);
 
-            disabledForNotif = NO;
-            
-            /*
-            //Check if AndroidLock XT is installed and enabled
-            BOOL isAndroidLockEnabled = NO;
-            SBLockScreenManager *lockScreenManager = [%c(SBLockScreenManager) sharedInstance];
-            if([lockScreenManager respondsToSelector:@selector(androidlockIsEnabled)])
-                isAndroidLockEnabled = [lockScreenManager androidlockIsEnabled];
-                
-            if (isAndroidLockEnabled)
-            {
-                [[%c(SBLockScreenManager) sharedInstance] androidlockAttemptUnlockWithUnlockActionContext:nil];
-                return;
-            }
-            */
+        disabledForNotif = NO;
 
-            // Should work with both ClassicLockScreen and iOS 6
-            id awayController_ = %c(SBAwayController);
-            if (awayController_ && [awayController_ respondsToSelector:@selector(sharedAwayController)])
-            {
-                SBAwayController *awayController = [%c(SBAwayController) sharedAwayController];
-                if ([awayController respondsToSelector:@selector(attemptDeviceUnlockWithPassword:lockViewOwner:)])
-                {
-                    if ([[LibPass sharedInstance] respondsToSelector:@selector(getEffectiveDevicePasscode)])
-                        [awayController attemptDeviceUnlockWithPassword:[[LibPass sharedInstance] getEffectiveDevicePasscode] lockViewOwner:nil];
-                    return;
-                }
-            }
-
-            [[LibPass sharedInstance] unlockWithCodeEnabled:NO];
-        });
+        [[LibPass sharedInstance] unlockWithCodeEnabled:NO];
+    });
 }
 -(void)faceRejected
 {
@@ -200,7 +173,13 @@ static void reloadRecognizer(CFNotificationCenterRef center,
 
 static void start_appellancy()
 {
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE, 0), ^{
+    static dispatch_once_t queueCreationGuard;
+    static dispatch_queue_t queue;
+    dispatch_once(&queueCreationGuard, ^{
+        queue = dispatch_queue_create("com.efrederickson.appellancy.backgroundQueue", DISPATCH_QUEUE_CONCURRENT);
+    });
+
+    dispatch_async(queue, ^{
         if (!enabled)
             return;
             
@@ -266,9 +245,7 @@ static void start_appellancy()
     if (onlyStartOnSwipe)
         return ret;
 
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE, 0), ^{
-        start_appellancy();
-    });
+    start_appellancy();
     
     return ret;
 }
@@ -292,7 +269,7 @@ static void start_appellancy()
         return;
 
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, .25f * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
-        start_appellancy();
+    start_appellancy();
     });
 }
 
@@ -300,15 +277,11 @@ static void start_appellancy()
 {
     %orig;
 
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE, 0), ^{
-        if ([[AFaceDetector sharedDetector] running])
-        {
-            
+    if ([[AFaceDetector sharedDetector] running])
+    {
             [[AFaceDetector sharedDetector] stop]; // device was unlocked
             [[AFaceDetector sharedDetector] deregisterDelegate:aDelegate];
-
-        }
-    });
+    }
     disabledForNotif = NO;
 }
 
