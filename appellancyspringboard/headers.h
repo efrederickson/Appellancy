@@ -33,6 +33,7 @@
 @interface SBUIPasscodeLockViewBase : UIView
 -(id)initWithFrame:(CGRect)arg1 ;
 -(void)_updateStatusText:(id)arg1 animated:(BOOL)arg2 ;
+-(void)_updateStatusText:(id)arg1 subtitle:(id)arg2 animated:(BOOL)arg3;
 -(void)setAllowsStatusTextUpdatingOnResignFirstResponder:(BOOL)arg1 ;
 -(BOOL)showsStatusField;
 

@@ -1,5 +1,4 @@
 #import <opencv2/highgui/cap_ios.h>
-#import "NSData+AES.h"
 #import "AFaceDetector.h"
 #import <substrate.h>
 #import <notify.h>
@@ -124,7 +123,10 @@ static void reloadRecognizer(CFNotificationCenterRef center,
     dispatch_sync(dispatch_get_main_queue(), ^{
         if (storedPasscodeView && !dontChange1)
         {
-            [storedPasscodeView _updateStatusText:[NSString stringWithFormat:@"Recognized %@", recognized] animated:YES];
+            if ([storedPasscodeView respondsToSelector:@selector(_updateStatusText:subtitle:animated:)]) // iOS 7.1
+                [storedPasscodeView _updateStatusText:[NSString stringWithFormat:@"Recognized %@", recognized] subtitle:@"" animated:YES];
+            else // iOS 7.0
+                [storedPasscodeView _updateStatusText:[NSString stringWithFormat:@"Recognized %@", recognized] animated:YES];
         }
         if (!dontChange2)
             [SBLSMANAGER.lockScreenViewController shakeSlideToUnlockTextWithCustomText:[NSString stringWithFormat:@"Recognized %@", recognized]];
@@ -164,7 +166,12 @@ static void reloadRecognizer(CFNotificationCenterRef center,
         }
 
         if (storedPasscodeView && !dontChange1)
-            [storedPasscodeView _updateStatusText:@"Face not recognized" animated:YES];
+        {
+            if ([storedPasscodeView respondsToSelector:@selector(_updateStatusText:subtitle:animated:)]) // iOS 7.1
+                [storedPasscodeView _updateStatusText:@"Face not recognized" subtitle:@"" animated:YES];
+            else // iOS 7.0
+                [storedPasscodeView _updateStatusText:@"Face not recognized" animated:YES];
+        }
         if (!dontChange2)
             [SBLSMANAGER.lockScreenViewController shakeSlideToUnlockTextWithCustomText:@"Face not recognized"];
     });
@@ -208,7 +215,12 @@ static void start_appellancy()
         {
             dispatch_sync(dispatch_get_main_queue(), ^{
                 if (storedPasscodeView && !dontChange1)
-                    [storedPasscodeView _updateStatusText:@"Starting Appellancy..." animated:YES];
+                {
+                    if ([storedPasscodeView respondsToSelector:@selector(_updateStatusText:subtitle:animated:)]) // iOS 7.1
+                        [storedPasscodeView _updateStatusText:@"Starting Appellancy..." subtitle:@"" animated:YES];
+                    else // iOS 7.0
+                        [storedPasscodeView _updateStatusText:@"Starting Appellancy..." animated:YES];
+                }
                 if (!dontChange2)
                     [SBLSMANAGER.lockScreenViewController shakeSlideToUnlockTextWithCustomText:@"Starting Appellancy..."];
             });
@@ -217,7 +229,12 @@ static void start_appellancy()
         {
             dispatch_sync(dispatch_get_main_queue(), ^{
                 if (storedPasscodeView && !dontChange1)
-                    [storedPasscodeView _updateStatusText:@"Appellancy started" animated:YES];
+                {
+                    if ([storedPasscodeView respondsToSelector:@selector(_updateStatusText:subtitle:animated:)]) // iOS 7.1
+                        [storedPasscodeView _updateStatusText:@"Appellancy started" subtitle:@"" animated:YES];
+                    else // iOS 7.0
+                        [storedPasscodeView _updateStatusText:@"Appellancy started" animated:YES];
+                }
                 if (!dontChange2)
                     [SBLSMANAGER.lockScreenViewController shakeSlideToUnlockTextWithCustomText:@"Appellancy started"];
             });

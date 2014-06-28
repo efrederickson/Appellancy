@@ -5,7 +5,7 @@ CFLAGS = -fobjc-arc
 include $(THEOS)/makefiles/common.mk
 
 TWEAK_NAME = AppellancySpringBoard
-AppellancySpringBoard_FILES = Tweak.xm NSData+AES.m
+AppellancySpringBoard_FILES = Tweak.xm
 AppellancySpringBoard_LIBRARIES = flipswitch appellancy Pass
 
 AppellancySpringBoard_FRAMEWORKS = UIKit
