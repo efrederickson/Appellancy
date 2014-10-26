@@ -123,7 +123,9 @@ static void reloadRecognizer(CFNotificationCenterRef center,
     dispatch_sync(dispatch_get_main_queue(), ^{
         if (storedPasscodeView && !dontChange1)
         {
-            if ([storedPasscodeView respondsToSelector:@selector(_updateStatusText:subtitle:animated:)]) // iOS 7.1
+            if ([storedPasscodeView respondsToSelector:@selector(updateStatusText:subtitle:animated:)]) // iOS 8.0-8.1
+                [storedPasscodeView updateStatusText:[NSString stringWithFormat:@"Recognized %@", recognized] subtitle:@"" animated:YES];
+            else if ([storedPasscodeView respondsToSelector:@selector(_updateStatusText:subtitle:animated:)]) // iOS 7.1
                 [storedPasscodeView _updateStatusText:[NSString stringWithFormat:@"Recognized %@", recognized] subtitle:@"" animated:YES];
             else // iOS 7.0
                 [storedPasscodeView _updateStatusText:[NSString stringWithFormat:@"Recognized %@", recognized] animated:YES];
@@ -158,8 +160,8 @@ static void reloadRecognizer(CFNotificationCenterRef center,
             Class libGuest = %c(LibGuest);
             if (libGuest)
             {
-                if (![[libGuest sharedInstance] isActive]) // wait we are on the lockscreen, right? huh oh well
-                    [[libGuest sharedInstance] activate];
+                if (![(LibGuest*)[libGuest sharedInstance] isActive]) // wait we are on the lockscreen, right? huh oh well
+                    [(LibGuest*)[libGuest sharedInstance] activate];
             }
             else
                 CFNotificationCenterPostNotification(CFNotificationCenterGetDarwinNotifyCenter(), CFSTR("com.ianb821.guestmode/launchGuestMode"), nil, nil, YES);
@@ -167,7 +169,9 @@ static void reloadRecognizer(CFNotificationCenterRef center,
 
         if (storedPasscodeView && !dontChange1)
         {
-            if ([storedPasscodeView respondsToSelector:@selector(_updateStatusText:subtitle:animated:)]) // iOS 7.1
+            if ([storedPasscodeView respondsToSelector:@selector(updateStatusText:subtitle:animated:)]) // iOS 8.0-8.1
+                [storedPasscodeView updateStatusText:@"Face not recognized" subtitle:@"" animated:YES];
+            else if ([storedPasscodeView respondsToSelector:@selector(_updateStatusText:subtitle:animated:)]) // iOS 7.1
                 [storedPasscodeView _updateStatusText:@"Face not recognized" subtitle:@"" animated:YES];
             else // iOS 7.0
                 [storedPasscodeView _updateStatusText:@"Face not recognized" animated:YES];
@@ -192,7 +196,7 @@ static void start_appellancy()
             
             
         if (notWhenMusic)
-            if ([[%c(SBMediaController) sharedInstance] isPlaying])
+            if ([[%c(SBMediaController) sharedInstance] performSelector:@selector(isPlaying)])
                 return;
 
         if (disabledForNotif)
@@ -216,7 +220,9 @@ static void start_appellancy()
             dispatch_sync(dispatch_get_main_queue(), ^{
                 if (storedPasscodeView && !dontChange1)
                 {
-                    if ([storedPasscodeView respondsToSelector:@selector(_updateStatusText:subtitle:animated:)]) // iOS 7.1
+                    if ([storedPasscodeView respondsToSelector:@selector(updateStatusText:subtitle:animated:)]) // iOS 8.0-8.1
+                        [storedPasscodeView updateStatusText:@"Starting Appellancy..." subtitle:@"" animated:YES];
+                    else if ([storedPasscodeView respondsToSelector:@selector(_updateStatusText:subtitle:animated:)]) // iOS 7.1
                         [storedPasscodeView _updateStatusText:@"Starting Appellancy..." subtitle:@"" animated:YES];
                     else // iOS 7.0
                         [storedPasscodeView _updateStatusText:@"Starting Appellancy..." animated:YES];
@@ -230,10 +236,12 @@ static void start_appellancy()
             dispatch_sync(dispatch_get_main_queue(), ^{
                 if (storedPasscodeView && !dontChange1)
                 {
-                    if ([storedPasscodeView respondsToSelector:@selector(_updateStatusText:subtitle:animated:)]) // iOS 7.1
-                        [storedPasscodeView _updateStatusText:@"Appellancy started" subtitle:@"" animated:YES];
+                    if ([storedPasscodeView respondsToSelector:@selector(updateStatusText:subtitle:animated:)]) // iOS 8.0-8.1
+                        [storedPasscodeView updateStatusText:@"Appellancy Started" subtitle:@"" animated:YES];
+                    else if ([storedPasscodeView respondsToSelector:@selector(_updateStatusText:subtitle:animated:)]) // iOS 7.1
+                        [storedPasscodeView _updateStatusText:@"Appellancy Started" subtitle:@"" animated:YES];
                     else // iOS 7.0
-                        [storedPasscodeView _updateStatusText:@"Appellancy started" animated:YES];
+                        [storedPasscodeView _updateStatusText:@"Appellancy Started" animated:YES];
                 }
                 if (!dontChange2)
                     [SBLSMANAGER.lockScreenViewController shakeSlideToUnlockTextWithCustomText:@"Appellancy started"];
@@ -286,7 +294,8 @@ static void start_appellancy()
         return;
 
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, .25f * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
-    start_appellancy();
+    //dispatch_async(queue, ^{
+        start_appellancy();
     });
 }
 

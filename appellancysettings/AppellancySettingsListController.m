@@ -71,7 +71,7 @@
     SLComposeViewController *composeController = [SLComposeViewController
                                                   composeViewControllerForServiceType:SLServiceTypeTwitter];
     
-    [composeController setInitialText:@"I’m loving #Appellancy from @Daementor!"];
+    [composeController setInitialText:@"I’m loving #Appellancy from @daementor!"];
     
     [self presentViewController:composeController
                        animated:YES completion:nil];
@@ -103,7 +103,7 @@
     
     UIImage *headerImage = [UIImage imageNamed:@"logo.png" inBundle:[NSBundle bundleForClass:self.class]];
     UIImageView *imageView = [[UIImageView alloc] initWithImage:headerImage];
-    imageView.frame = CGRectMake(imageView.frame.origin.x, 10, imageView.frame.size.width, 75);
+    imageView.frame = CGRectMake(imageView.frame.size.width, 10, imageView.frame.size.width, 75);
     
     [headerView addSubview:imageView];
     [self.table setTableHeaderView:headerView];
